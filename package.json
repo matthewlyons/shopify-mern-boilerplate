@@ -1,0 +1,31 @@
+{
+  "name": "shopify-mern-boilerplate",
+  "version": "1.0.0",
+  "description": "MERN Stack Boilerplate to create Public/ Custom Shopify Apps",
+  "main": "index.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "build": "npm run pack --prefix client",
+    "start": "node server.js",
+    "server": "nodemon ./server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Matthew Lyons",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^5.1.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "crypto-js": "^4.0.0",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "helmet": "^3.21.3",
+    "mongoose": "^5.9.2",
+    "nonce": "^1.0.4"
+  }
+}
